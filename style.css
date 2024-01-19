@@ -752,6 +752,7 @@ nav .dropdown-nav:hover .dropdown-nav-content {
     width: 270px;
     height: 105px;
     margin: 5px;
+    overflow: hidden;
 }
 
 #equipe .dropbtn-equipe h3 , #equipe .dropbtn-equipe h3 b {
