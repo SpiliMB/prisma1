@@ -305,13 +305,15 @@
         z-index: 2;
         text-align: center;
         background: #E25C43;
-        padding: 10px;
+        padding: 15px;
         box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.15);
         border-radius: 30px;
     }
 
     header nav #mobile1 #mobile #menudrop:hover #li-mobile {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     header nav #mobile1 {
@@ -329,10 +331,6 @@
     header nav #mobilenone1 , header nav #mobilenone2 , header nav #mobilenone3 {
         display: none;
     }
-
-   /*  header nav #mobilenone1{
-        display: none;
-    } */
 
     body main #hero {
         padding-top: 20px;
@@ -389,6 +387,132 @@
     main #perguntas button h3 {
         font-size: 17px;
     }
+
+    main #perguntas .block-cards h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    header nav #mobile {
+        gap: 3px;
+        padding-right: 10px;
+    }
+
+    header nav #mobile .button h5 {
+        font-size: 12px;
+    }
+
+    header nav #mobile .button {
+        margin-bottom: 5px;
+    }
+
+    header nav #mobile1 #mobile #menudrop #li-mobile {
+        margin-left: -70px;
+    }
+
+    header nav #mobile1 #mobile #menudrop #li-mobile h4 {
+        font-size: 12px;
+    }
+
+    header nav #mobile1 #mobile #menudrop #li-mobile h5 {
+        font-size: 10px;
+    }
+
+    main #hero .bloco1 h1 img {
+        height: 100px;
+    }
+
+    body main #hero .bloco2 img {
+        height: 400px;
+        margin-left: -35px;
+    }
+
+    main #sobre {
+        overflow: hidden;
+    }
+
+    main #sobre .bloco2 h2 img {
+        height: 125px;
+    }
+
+    main #sobre .bloco2 h4 {
+        font-size: 15px;
+    }
+ 
+    main #equipe {
+        height: 80vw;
+    }
+
+    main #equipe #cards-linha1 .block-card-linha1 .card-linha1 img , main #equipe #cards-linha2 .block-card-linha2 .card-linha2 img {
+        height: 125px;
+    }
+
+    main #equipe #cards-linha1 .block-card-linha1 .card-linha1 , main #equipe #cards-linha2 .block-card-linha2 .card-linha2 {
+        height: 250px;
+        margin-top: -250px;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    main #equipe #cards-linha1 .block-card-linha1 .card-linha1 h3 , main #equipe #cards-linha2 .block-card-linha2 .card-linha2 h3 {
+        font-size: 8px;
+        padding: 10px;
+    }
+
+    main #equipe #cards-linha2 {
+        margin: 0;
+    }
+
+    main #equipe .dropbtn-equipe h3 , main #equipe .dropbtn-equipe h3 b {
+        font-size: 8px;
+        padding: 0px;
+    }
+
+    main #equipe #cards-linha1 .block-card-linha1 .dropbtn-equipe , main #equipe #cards-linha2 .block-card-linha2 .dropbtn-equipe {
+        width: 65px;
+    }
+
+    main #perguntas button h3 {
+        font-size: 15px;
+    }
+
+    main #perguntas .block-cards h4 {
+        font-size: 13px;
+    }
+
+    main #perguntas .block-cards {
+        margin: 0;
+    }
+
+    main #contato .button h5 {
+        font-size: 17px;
+    }
+
+    main #contato #contact-block #contact {
+        width: auto;
+    }
+
+    main #contato #contact h4 {
+        font-size: 10px;
+    }
+    
+    main #contato #maps , main #contato #maps iframe {
+        min-width: 275px;
+    }
+
+    body #rodape .logo {
+        width: 200px;
+    }
+
+    body #rodape {
+        text-align: center;
+    }
+
+    body #rodape h5 {
+        font-size: 12px;
+    }
+
 }
 
 #hero , #equipe , #sobre {
